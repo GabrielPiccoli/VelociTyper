@@ -1,0 +1,52 @@
+.controlsButtons {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: calc(100% - 2rem);
+  margin: 0rem 1rem 1rem;
+}
+
+.controlsButtons button {
+  padding: 0.75rem;
+  width: 10rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--white);
+  text-shadow: 1px 1px 2px black;
+}
+
+.controlStartButton {
+  background-color: var(--green);
+}
+
+.controlChangeButton {
+  background-color: var(--red);
+}
+
+.controlResetButton {
+  background-color: var(--blue);
+}
+
+.controlsButtons button:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+.controlDesabledButton {
+  background-color: var(--gray);
+  cursor: not-allowed;
+}
+
+.controlsButtons .controlDesabledButton:hover {
+  filter:brightness(1);
+  cursor: not-allowed;
+}
+
+@media(max-width: 500px) {
+  .controlsButtons button {
+    width: 90%;
+    margin-top: 1.25rem;
+  }
+}

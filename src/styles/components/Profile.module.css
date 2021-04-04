@@ -1,0 +1,43 @@
+.profileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.profileContainer img{
+  border-radius: 50%;
+  max-width: 120px;
+  margin-right: 1rem;
+  border: 2px solid var(--dark-orange);
+}
+
+.profileContainer strong {
+  font-size: 1.5rem;
+  color: var(--orange);
+}
+
+.profileContainer p {
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+}
+
+.levelIcon {
+  text-shadow: 1px 1px 5px var(--orange);
+  color: var(--green);
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.logOutIcon {
+  color: var(--red);
+  margin-left: 1.5rem;
+  font-size: 2rem;
+}
+
+@media(max-width: 500px) {
+  .profileContainer {
+    width: 100%
+  }
+}

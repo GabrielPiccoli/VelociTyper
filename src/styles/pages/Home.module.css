@@ -1,0 +1,64 @@
+.container {
+  min-height: 100vh;
+  background-color: #343434;
+  color: whitesmoke;
+  display: flex;
+}
+
+.pageContent {
+  width: 92%;
+  margin-left: 8%;
+  padding: 1rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content:center;  
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 10px var(--orange);
+}
+
+.title img {
+  max-width: 80px;
+  margin-left: 1.5rem;
+}
+
+.subTitle {
+  font-size: 1.05rem;
+  text-align: center;
+  margin: 0.75rem 0;
+  color: var(--dark-orange);
+}
+
+.mainContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.informations {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gameContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gameContainerControllers {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+@media(max-width: 500px) {
+  .gameContainerControllers {
+    width: 100%;
+  }
+}

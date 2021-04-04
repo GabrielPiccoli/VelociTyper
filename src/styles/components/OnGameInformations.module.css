@@ -1,0 +1,25 @@
+.onGameInformations {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 50%;
+}
+
+.onGameInformations p {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.onGameInformations i {
+  color: var(--dark-orange);
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+}
+
+@media(max-width: 500px) {
+  .onGameInformations {
+    width: 100%;
+  }
+}
